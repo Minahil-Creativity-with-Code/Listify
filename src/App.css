@@ -1,0 +1,120 @@
+/* ===== Base Styles for Body ===== */
+body {
+  margin: 0; /* Remove default browser margin */
+  font-family: 'Segoe UI', sans-serif; /* Smooth and modern font */
+  background-color: #0f0e1a; /* Dark background color */
+  color: white; /* White text for contrast */
+  background-image: url(/background.jpg); /* Background image path (public folder) */
+  background-size: cover; /* Make the background image cover the entire screen */
+}
+
+/* ===== Centering Container ===== */
+.container {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Take full viewport height */
+}
+
+/* ===== Main Todo Box ===== */
+.todo-box {
+  background-color: #302d57; /* Dark purple background */
+  padding: 30px; /* Inner spacing */
+  border-radius: 20px; /* Rounded corners */
+  width: 350px; /* Fixed width for the todo box */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* ===== Heading Style ===== */
+h1 {
+  display: flex; /* To align icon and text */
+  align-items: center; /* Vertically center icon with text */
+  font-size: 24px; /* Font size for heading */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+/* ===== Clock Icon Style ===== */
+.clock-icon {
+  margin-right: 10px; /* Space between icon and text */
+  color: #00d08a; /* Greenish color for the clock icon */
+}
+
+/* ===== Input and Add Button Group ===== */
+.input-group {
+  display: flex; /* Arrange input and button in a row */
+  margin-bottom: 20px; /* Space below the input group */
+}
+
+/* ===== Task Input Box ===== */
+.input-group input {
+  flex: 1; /* Take all available width */
+  padding: 10px; /* Inner padding */
+  border: none; /* Remove default border */
+  border-radius: 8px 0 0 8px; /* Rounded left side */
+  outline: none; /* Remove focus outline */
+  font-size: 16px; /* Font size inside input */
+}
+
+/* ===== Add Button Style ===== */
+.input-group button {
+  background-color: #3a7afe; /* Blue background */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding inside button */
+  color: white; /* White text */
+  font-weight: bold; /* Bold text */
+  border-radius: 0 8px 8px 0; /* Rounded right side */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* ===== Filter Buttons (All, Active, Completed) ===== */
+.filters {
+  display: flex; /* Flex layout */
+  justify-content: space-around; /* Evenly spaced */
+  margin-bottom: 15px; /* Space below filters */
+  font-size: 14px; /* Font size of filters */
+  color: #aaa; /* Light grey color */
+}
+
+/* ===== Active Filter Highlight Style ===== */
+.filters .active {
+  color: #3a7afe; /* Highlight active filter */
+  border-bottom: 2px solid #3a7afe; /* Blue underline */
+  padding-bottom: 2px; /* Slight space under text */
+}
+
+/* ===== Task List Styling ===== */
+.task-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* ===== Individual Task Item ===== */
+.task-item {
+  background-color: #403d77; /* Slightly lighter purple */
+  padding: 12px; /* Inner padding */
+  border-radius: 10px; /* Rounded edges */
+  display: flex; /* Flex layout */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space between task text and delete icon */
+  margin-bottom: 10px; /* Space between tasks */
+}
+
+/* ===== Checkbox Style Inside Task ===== */
+.task-item input[type="checkbox"] {
+  margin-right: 10px; /* Space between checkbox and text */
+}
+
+/* ===== Task Text Span ===== */
+.task-item span {
+  flex: 1; /* Take remaining space */
+}
+
+/* ===== Delete Button Style ===== */
+.delete-btn {
+  background: none; /* Transparent background */
+  border: none; /* No border */
+  color: red; /* Red trash icon */
+  font-size: 18px; /* Size of the delete icon */
+  cursor: pointer; /* Pointer cursor on hover */
+}
